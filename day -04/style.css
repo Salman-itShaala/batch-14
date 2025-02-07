@@ -1,0 +1,21 @@
+p {
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: end;
+  background-color: black;
+}
+
+/*
+this is comment
+*/
+
+.my-para {
+  color: white;
+  text-align: center;
+}
+
+.salman {
+  color: blue;
+  background-color: gray;
+}
