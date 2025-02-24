@@ -109,6 +109,10 @@ a {
   border-radius: 4px;
 }
 
+.card:hover {
+  background-color: #18bc9c;
+}
+
 .card-img {
   border-radius: 50%;
 }
