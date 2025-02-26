@@ -44,3 +44,17 @@ if (day == 1) {
 //   default:
 //     console.log("Invalid day value");
 // }
+
+// Q1. given age of user check whether he/she is eligible for marriage or not
+
+// Q2. Given a number check whether that number is divisible by 10 or not
+
+// Q3. Given percentages of student
+// 80 - 90 --> Excellent
+// 70 - 80 --> Good
+// 60 - 70 --> OK
+// 50 - 60 --> Avg
+// 40 - 50 --> You are legend
+// 30 - 40 --> You are ultralegend
+// 20 - 30 --> Tumse na ho payega
+// 10 - 20 --> Bhagwan hi bacha sakte hai bhai
