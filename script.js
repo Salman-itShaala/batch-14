@@ -87,6 +87,8 @@ do {
 
 // Given two numbers, print 'sum is less than 100' if the sum of both numbers is less than 100. Otherwise print 'sum is greater than 100' .
 
+// Attendance 4th march
+
 // Arun
 // Rohit
 // Yash
