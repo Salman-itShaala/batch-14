@@ -15,12 +15,12 @@ function greetUser() {
 }
 
 function calculateNoOfDigits(number) {
-  //1234.
+
   let numOfDigits = 0;
 
   while (number > 0) {
-    const ans = number / 10; // 123.4
-    number = Math.floor(ans); // 123
+    const ans = number / 10; // 12.3
+    number = Math.floor(ans); // 0
     numOfDigits++;
   }
 
