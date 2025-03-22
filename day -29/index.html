@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <style>
+      .first-form {
+        border: 2px solid black;
+        padding: 10px;
+        width: 40vw;
+        margin: auto;
+      }
+
+      .second-form {
+        margin: 100vh 0;
+      }
+
+      input {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>We are learning forms</h1>
+
+    <form class="first-form">
+      <label for="username">Username</label>
+      <br />
+      <input
+        type="text"
+        placeholder="Enter username phone number username or email id"
+        id="username"
+        name="username"
+        required
+        minlength="4"
+        maxlength="15"
+      />
+
+      <br />
+      <br />
+
+      <label for="pass-input">Password</label>
+      <br />
+      <input
+        type="password"
+        placeholder="Enter passoword"
+        id="pass-input"
+        name="password"
+        required
+      />
+      <!-- <button onclick="showHidePassword()">show/hide</button> -->
+
+      <br /><br />
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">Female</label>
+
+      <input type="radio" id="others" name="gender" value="others" required />
+      <label for="others">Others</label>
+
+      <br />
+      <br />
+
+      <p>Select your fav cars.</p>
+
+      <input type="checkbox" id="car-1" name="car-1" value="merc" />
+      <label for="car-1">Merc..</label>
+
+      <input type="checkbox" id="car-2" name="car-2" value="audi" />
+      <label for="car-2">Audi</label>
+
+      <input type="checkbox" id="car-3" name="car-3" value="ferrari" />
+      <label for="car-3">Ferrari</label>
+
+      <br /><br />
+
+      <label for="lang">Select your lang.</label>
+      <select id="lang" name="lang">
+        <option value="marathi">Marathi</option>
+        <option value="Hindi">Hindi</option>
+        <option value="English">English</option>
+        <option value="Kannad">Kannad</option>
+      </select>
+
+      <br />
+      <br />
+
+      <button type="submit">Login</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <form class="second-form">
+      <fieldset>
+        <legend>Personal details</legend>
+        <input type="text" placeholder="Enter ..." />
+        <br />
+        <input type="number" placeholder="Enter ..." />
+        <br />
+        <input type="email" />
+        <br />
+        <input type="password" />
+        <br />
+        <input type="date" />
+        <br />
+        <input type="month" />
+        <br />
+        <input type="week" />
+      </fieldset>
+
+      <br />
+      <input type="time" />
+      <br />
+      <input type="color" />
+      <br />
+      <input type="checkbox" />
+      <br />
+      <input type="radio" />
+      <br />
+      <input type="range" />
+      <br />
+      <textarea placeholder="Enter messege"></textarea>
+      <br />
+      <input type="hidden" value="secret" />
+      <br />
+      <input type="" />
+      <br />
+      <br />
+      <!-- radio -->
+    </form>
+
+    <!-- <script>
+      const passInput = document.getElementById("pass-input");
+      function showHidePassword() {
+        passInput.setAttribute("type", "text");
+      }
+    </script> -->
+  </body>
+</html>
