@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>We are learning css vars and light dark theme</h1>
+      <button onclick="toggleTheme()">change theme</button>
+    </div>
+
+    <script>
+      // selecting html element
+      const htmlEl = document.documentElement;
+
+      function toggleTheme() {
+        // toggling dark class
+        htmlEl.classList.toggle("dark");
+      }
+    </script>
+  </body>
+</html>

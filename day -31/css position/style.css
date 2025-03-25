@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: aqua;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 10vh;
+}
+
+.call {
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  /* left: 900px; */
+  right: 40px;
+  z-index: 9999;
+}
+
+.first,
+.second,
+.third {
+  height: 100vh;
+  width: 100%;
+}
+
+.first {
+  background-color: red;
+  margin-top: 10vh;
+}
+
+h2 {
+  color: white;
+}
+.second {
+  background-color: green;
+}
+.third {
+  background-color: black;
+  /* -------- */
+  position: relative;
+}
+
+.third img {
+  height: 100%;
+  width: 100%;
+}
+.third p {
+  position: absolute;
+  top: 50%;
+
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
