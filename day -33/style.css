@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-font-size: 40px;
+  --header-height: 100px;
+}
+
+h2 {
+  color: rgb(255, 128, 0);
+  background-color: hsl(0, 100%, 50%);
+  font-size: clamp(14px, 20px, 28px);
+  height: 100px;
+}
+
+.box {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRduXFjNZQlYDT_bBSJiIS_EScBlqy6EtJgig&s");
+  background-repeat: no-repeat;
+  height: calc(100vh - 100px);
+  width: 40vw;
+  background-color: aqua;
+  /* height: 82vh; */
+  /* width: max(50vw, 400px); */
+}
+
+/* a{
+    transition: color ;
+} */
+
+.box p {
+  padding: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  /* display: none; */
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  /* transform: rotate(30deg); */
+}
+
+.box:hover p {
+  opacity: 0.8;
+
+  /* display: block; */
+  /* visibility: visible; */
+}
+
+.container {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: auto;
+  margin-bottom: 80px;
+  transition: transform 200ms ease-in-out;
+
+  /* 
+  transition-property: ;
+  transition-duration: ;
+  transition-delay: ;
+  transition-timing-function: ; */
+
+  /* transition-delay: 0.5s; */
+
+  /* 
+  linear
+  ease
+  
+  */
+}
+
+.container:hover {
+  transform: scale(1.2);
+  background-color: blueviolet;
+  /* transform: scale(0.5); */
+  /* transform: translateY(-100px); */
+}
+
+img {
+  /* filter: blur(1px); */
+  /* filter: brightness(10px); */
+}
+
+img:hover {
+  filter: grayscale();
+}
+
+.my-div {
+  margin: 10vh auto;
+  background-color: black;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+body {
+  background: green;
+}
+
+p,
+span {
+  transition: transform 0.5s ease-in-out;
+}
+
+.my-div span {
+  transform: translateX(-250px);
+}
+
+.my-div:hover span {
+  transform: translateX(100px);
+}
+
+.my-div:hover p {
+  transform: translateX(250px);
+}
