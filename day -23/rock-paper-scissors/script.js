@@ -3,8 +3,11 @@ const usersChoiceDisplay = document.getElementById("users-choice-display");
 const computerChoiceDisplay = document.getElementById(
   "computers-choice-display"
 );
+const userWinCountDisplay = document.getElementById("user-win-count");
 
 const possibleComputerChoices = ["rock", "paper", "scissors"];
+
+let userWincount = 0;
 
 function playGame(userChoice) {
   // to get computer's choice
@@ -16,6 +19,7 @@ function playGame(userChoice) {
   updateFrontEnd(userChoice, computerChoice);
 
   // check who won
+
   checkWhoWon(userChoice, computerChoice);
 }
 
@@ -52,6 +56,8 @@ function checkWhoWon(userChoice, computerChoice) {
     (userChoice === "scissors" && computerChoice === "paper")
   ) {
     resultDisplay.innerText = "Result : Congratulations, You won!! 😁";
+    userWincount++;
+    userWinCountDisplay.innerHTML = userWincount;
   } else if (
     (computerChoice === "rock" && userChoice === "scissors") ||
     (computerChoice === "paper" && userChoice === "rock") ||

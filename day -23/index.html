@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      .b {
+        color: red;
+        background-color: black;
+        border: 2px solid yellow;
+        font-size: 24px;
+      }
+
+      .active {
+        color: black;
+        background-color: red;
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="addClass()">Add Class</button>
+    <button onclick="removeClass()">Remove class</button>
+    <button onclick="toggleClass()">Toggle class</button>
+    <button onclick="showHide()">show / hide</button>
+    <h1 class="my-h1" id="heading">H1 with class my-h1</h1>
+    <script src="script.js"></script>
+  </body>
+</html>
