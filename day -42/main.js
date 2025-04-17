@@ -3,9 +3,7 @@ const recipesWrapper = document.getElementById("reicepes");
 async function getRecipes() {
   // await make js waits till the promise is resolved
 
-  const res = await fetch(
-    "https://dummyjson.com/recipes?limit=4&skip=0&select=name,image,rating"
-  );
+  const res = await fetch("https://dummyjson.com/recipes");
 
   const data = await res.json();
 
@@ -20,7 +18,7 @@ async function getRecipes() {
 
     aTag.classList.add("recipe-card");
 
-    aTag.setAttribute("href", `./recipe.html?id=${recipe.id}`);
+    // TODO : add href attribute
 
     recipesWrapper.append(aTag);
   });
