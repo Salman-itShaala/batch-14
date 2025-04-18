@@ -18,6 +18,8 @@ async function getRecipes() {
 
     aTag.classList.add("recipe-card");
 
+    aTag.setAttribute("href", `./recipe.html?id=${recipe.id}`);
+
     // TODO : add href attribute
 
     recipesWrapper.append(aTag);
