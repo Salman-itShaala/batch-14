@@ -11,6 +11,7 @@ function printB() {
 function printC() {
   console.log("c");
 }
+
 // a
-// ..... b
-// c
+// ..c
+// ....b
